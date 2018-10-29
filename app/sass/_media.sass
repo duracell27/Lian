@@ -4,28 +4,128 @@
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
-+media-breakpoint-down(lg)
+// +media-breakpoint-down(lg)
 
-// ≥992px
-+media-breakpoint-down(md)
+// // ≥992px
+// +media-breakpoint-down(md)
 
-// ≥768px
-+media-breakpoint-down(sm)
+// // ≥768px
+// +media-breakpoint-down(sm)
+	
+// // ≥576px
+// +media-breakpoint-down(xs)
 
-// ≥576px
-+media-breakpoint-down(xs)
 
 
-/*==========  Mobile First  ==========*/
+// Large devices (large desktops, 1200px and up)
+//@media (min-width: $screen-lg-min)
 
-// ≤576px
-+media-breakpoint-up(sm)
+// Medium devices (desktops, 992px and up)
+@media (max-width: $screen-md-min) 
+	.owl-nav
+		.owl-prev
+			left: 10px
+		.owl-next
+			right: 10px
+		.arrow
+			width: 35px
+			height: 35px
+			line-height: 31px
+			font-size: 20px
 
-// ≤768px
-+media-breakpoint-up(md)
+	.portfolio
+		.toggles
+			button
+				font-size: 12px
 
-// ≤992px
-+media-breakpoint-up(lg)
+// Small devices (tablets, 768px and up)
+@media (max-width: $screen-sm-min) 
+	.owl-nav
+		.owl-prev
+			left: 10px
+		.owl-next
+			right: 10px
+		.arrow
+			width: 35px
+			height: 35px
+			line-height: 31px
+			font-size: 20px
+	.carousel-home-composition
+		.centered
+			.h1
+				font-size: 30px
+	
+	.portfolio
+		.toggles
+			button
+				padding: 20px 5px
+				font-size: 10px
+				&:after
+					margin-left: 13px
 
-// ≤1200px
-+media-breakpoint-up(xl)
+
+@media (max-width: $screen-xs-min)
+	.owl-nav
+		display: none
+
+	.carousel-home-composition
+		.centered
+			.h1
+				font-size: 24px
+				padding: 0 30px
+			p
+				font-size: 15px
+	.portfolio
+		margin-top: 0
+		.toggles
+			button
+				padding: 10px 4px
+				font-size: 9px
+				&:after
+					display: none
+					margin-left: 8px
+					font-size: 14px
+
+	.footer
+		&-social
+			.fab
+				padding: 20px 15px
+		&-copy
+			white-space: wrap
+			display: block
+			text-align: center
+			color: $gray
+			font-size: 14px
+			white-space: normal
+			span
+				color: #000
+				padding: 0 4px
+	
+
+
+
+
+
+
+			
+
+
+
+	
+	
+
+
+
+// ==========  Mobile First  ==========
+
+// // ≤576px
+// +media-breakpoint-up(sm)
+
+// // ≤768px
+// +media-breakpoint-up(md)
+
+// // ≤992px
+// +media-breakpoint-up(lg)
+
+// // ≤1200px
+// +media-breakpoint-up(xl)
