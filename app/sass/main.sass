@@ -283,9 +283,11 @@ form.form-inline
 	&-social
 		border-top: 1px solid #e1e1e1
 		border-bottom: 1px solid #e1e1e1
-		.fab
-			padding: 20px 30px
-			font-family: fontawesomebrands
+		a
+			color: $gray
+			.fab
+				padding: 20px 30px
+				font-family: fontawesomebrands
 	&-copy
 		margin-top: 35px
 		padding-bottom: 45px
@@ -297,9 +299,359 @@ form.form-inline
 			color: #000
 			padding: 0 4px
 footer
-	.container
+	.container-fluid
 		padding-right: 0px !important
 		padding-left: 0px !important
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+// PAGE ABOUT
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+.top-baner
+	background-position: center center
+	background-size: cover
+	width: 100%
+	.container
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		min-height: 350px
+		padding-left: 0
+		padding-right: 0
+	&-conposition
+		.h1
+			background-color: #000
+			padding: 0 80px
+			color: #fff
+			text-transform: uppercase
+			font-family: roboto
+			font-weight: 300
+			font-size: 48px
+			margin-bottom: 23px
+			white-space: nowrap
+		p
+			color: #000
+			text-align: left
+			text-transform: uppercase
+			font-family: roboto
+			font-weight: 300
+			font-size: 18px
+
+.section_bg
+	background-position: -270px -15px
+	width: 95%
+	min-height: 590px
+	position: relative
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+
+.story
+	padding: 70px 0
+	background-color: #fafafa
+.story_description
+	.h2
+		font-family: roboto
+		font-weight: 300
+		font-size: 18px
+		text-transform: uppercase
+		color: #000
+		letter-spacing: 4px
+		margin-bottom: 35px
+	p
+		font-family: roboto
+		font-size: 14px
+		color: $gray
+		margin-bottom: 30px
+
+.skills
+	p
+		font-family: roboto
+		font-weight: bold
+		font-size: 16px
+		color: #000
+		margin-bottom: 12px
+
+.skill
+	width: 100%
+	height: 10px
+	background-color: #ebebeb
+	align-items: center
+	justify-content: flex-start
+	display: flex
+	margin-bottom: 25px
+	&:last-child
+		margin-bottom: 0
+	.photoshop
+		width: 90%
+		height: 2px
+		background-color: #a1a1a1
+		margin: 4px 3px
+		margin-right: 0
+	.dot
+		width: 10px
+		height: 10px
+		background-color: #fff
+		border: 3px solid #000
+		border-radius: 50%
+		.board
+			width: 40px
+			height: 20px
+			background-color: #000
+			margin-top: -38px
+			text-align: center
+			line-height: 20px
+			font-size: 12px
+			color: #fff
+			font-family: lato
+			position: relative
+		.square
+			position: absolute
+			width: 1px
+			height: 1px
+			top: 12px
+			border: 8px solid transparent
+			border-left: 8px solid #000
+
+	.branding
+		width: 95%
+		height: 2px
+		background-color: #a1a1a1
+		margin: 4px 3px
+		margin-right: 0
+	.photography
+		width: 50%
+		height: 2px
+		background-color: #a1a1a1
+		margin: 4px 3px
+		margin-right: 0
+	.webdesign
+		width: 85%
+		height: 2px
+		background-color: #a1a1a1
+		margin: 4px 3px
+		margin-right: 0
+.team
+	background-color: #fafafa
+	padding-bottom: 75px
+.awesome_team
+	text-align: center
+	.h2
+		font-size: 30px
+		font-family: roboto
+		font-weight: 300
+		color: #000
+		letter-spacing: 10px
+		text-transform: uppercase
+		margin-bottom: 0
+	p
+		font-size: 14px
+		color: $gray
+		font-family: roboto
+		margin: 30px 35%
+.tile
+	background-color: #fff
+	box-shadow: 0px 0px 5px #cbcbcb
+	img
+		width: 100%
+
+.team_descr
+	padding: 30px
+	.h3
+		font-family: roboto
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 24px
+		color: #000
+		margin-bottom: 0
+	span
+		display: block
+		font-family: roboto
+		font-weight: bold
+		font-size: 16px
+		color: $gray
+		margin-bottom: 10px
+	p
+		font-size: 14px
+		font-family: roboto
+		color: $gray
+		margin-bottom: 0
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+// PAGE PORTFOLIO
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+.nomargin
+	margin-top: 0
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+// PAGE PORTFOLIODETAILS
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+.controlls
+	background-color: #fff
+.controlls-wrap
+	display: flex
+	.prevcontrol,.nextcontrol,.viewallposts
+		height: 65px
+		text-align: center
+		line-height: 65px
+		width: 165px
+		border-right: 1px solid #ebebeb
+		border-left: 1px solid #ebebeb
+		color: #000
+		font-size: 13px
+		font-weight: bold
+		text-transform: uppercase
+		cursor: pointer
+		.fas
+			font-family: fontawesomesolid
+			padding: 0 11px
+	.viewallposts
+		margin-left: auto
+		.fas
+			padding-left: 0
+	.nextcontrol
+		border-left: none
+		.fas
+			padding-right: 0
+	.prevcontrol
+		.fas
+			padding-left: 0
+
+.post
+	background-color: #fafafa
+	&-name
+		border-bottom: 1px solid #ccc
+		.h2
+			font-family: roboto
+			font-size: 30px
+			color: #000
+			text-transform: uppercase
+			margin-top: 60px
+		p
+			color: #555
+			font-size: 16px
+			font-family: roboto
+			font-weight: bold
+			margin-bottom: 20px
+	&-description
+		margin-top: 30px
+		border-bottom: 1px solid #ccc
+		span
+			display: inline-block
+			font-family: roboto
+			font-weight: bold
+			font-size: 16px
+			color: #555
+			margin-right: 60px
+			margin-bottom: 30px
+			.fas
+				margin-right: 5px
+		p
+			font-size: 14px
+			font-family: roboto
+			color: $gray
+			margin-bottom: 50px
+	&-tags
+		margin-top: 40px
+		span
+			display: block
+			font-size: 16px
+			color: #000
+			font-family: roboto
+			text-transform: uppercase
+			margin-bottom: 5px
+		p
+			font-size: 14px
+			font-family: roboto
+			color: $gray
+			margin-bottom: 40px
+	&-social
+		button
+			width: 90px
+			height: 42px
+			color: #fff
+			font-size: 13px
+			text-transform: uppercase
+			font-family: roboto
+			font-weight: bold
+			background-color: #707070
+			border: none
+			border-radius: 3px
+			line-height: 42px
+			margin-right: 10px
+			.fas
+				font-family: fontawesomesolid
+				padding-right: 5px
+		.soc-icon
+			position: relative
+			display: inline-block
+			font-size: 16px
+			color: #707070
+			background-color: #e1e1e1
+			border-radius: 3px
+			margin-bottom: 70px
+			.triangle
+				position: absolute
+				top: 12px
+				left: -10px
+				width: 1px
+				height: 1px
+				border: 10px solid #e1e1e1
+				border-left: none
+				border-top: 10px solid transparent
+				border-bottom: 10px solid transparent
+
+			a
+				.fab
+					font-family: fontawesomebrands
+					color: #707070
+					padding: 13px 15px
+.section-gallery
+	margin-top: 65px
+
+
+.fotorama__thumb-border
+	border-color: transparent
+	background-color: rgba(#000, .3)
+
+.works
+	padding-top: 70px
+	background-color: #fafafa
+	padding-bottom: 75px
+.related_works
+	text-align: center
+	.h2
+		font-size: 30px
+		font-family: roboto
+		font-weight: 300
+		color: #000
+		letter-spacing: 10px
+		text-transform: uppercase
+		margin-bottom: 0
+	p
+		font-size: 14px
+		color: $gray
+		font-family: roboto
+		margin: 30px 35%
+.tile
+	background-color: #fff
+	box-shadow: 0px 0px 5px #cbcbcb
+	img
+		width: 100%
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+// PAGE BLOG
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 
 
 @import "media" // Always at the end

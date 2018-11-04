@@ -18,8 +18,17 @@
 
 
 // Large devices (large desktops, 1200px and up)
-//@media (min-width: $screen-lg-min)
-
+@media (max-width: $screen-lg-min)
+	.story_description
+		.h2
+			margin-bottom: 14px
+	
+	.awesome_team
+		p
+			margin: 30px 22%
+	.related_works
+		p
+			margin: 30px 22%
 // Medium devices (desktops, 992px and up)
 @media (max-width: $screen-md-min) 
 	.owl-nav
@@ -37,6 +46,22 @@
 		.toggles
 			button
 				font-size: 12px
+
+	.section_bg
+		background-position: -470px -15px
+		width: 100%
+	
+	.skill
+		margin-bottom: 5px
+
+	.tile
+		height: 100%
+	.post
+		&-social
+			.soc-icon
+				a
+					.fab
+						padding: 13px 6px
 
 // Small devices (tablets, 768px and up)
 @media (max-width: $screen-sm-min) 
@@ -63,6 +88,27 @@
 				&:after
 					margin-left: 13px
 
+	.section_bg
+		background-position: -310px -15px
+		width: 100%
+	
+	.story_description
+		.h2
+			margin-top: 20px
+			text-align: center
+
+	.top-baner
+		.container
+		&-conposition
+			.h1
+				padding: 0 30px
+				font-size: 38px
+	.post
+		&-social
+			.soc-icon
+				a
+					.fab
+						padding: 13px 6px
 
 @media (max-width: $screen-xs-min)
 	.owl-nav
@@ -88,8 +134,9 @@
 
 	.footer
 		&-social
-			.fab
-				padding: 20px 15px
+			a
+				.fab
+					padding: 20px 15px
 		&-copy
 			white-space: wrap
 			display: block
@@ -100,7 +147,41 @@
 			span
 				color: #000
 				padding: 0 4px
-	
+	.top-baner
+		.container
+		&-conposition
+			.h1
+				padding: 0 30px
+				font-size: 24px
+			p
+				text-align: center
+	.top-baner
+		.container
+			justify-content: center
+
+	.skill
+		.dot
+			.board
+				margin-left: -38px
+				transform: scale(-1,1)
+				.percent
+					transform: scale(-1,1)
+	.works
+		.col-sm-4
+			margin-bottom: 20px
+	.team
+		.col-sm-4
+			margin-bottom: 20px
+
+	.post
+		&-social
+			.soc-icon
+				a
+					.fab
+						padding: 13px 6px
+	.section-gallery
+		margin-top: 0
+		
 
 
 
