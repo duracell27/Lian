@@ -657,4 +657,112 @@ footer
 	&-post
 		column-count: 2
 
+.blog-widget
+	&-search
+		margin-top: 70px
+		form
+			position: relative
+			input[type="text"]
+				text-indent: 30px
+				width: 100%
+				height: 60px
+				border: none
+				font-family: roboto_italic
+				&::-webkit-input-placeholder
+					color: #bbb
+			button[type="submit"]
+				position: absolute
+				top: 12px
+				right: 11px
+				width: 35px
+				height: 35px
+				background-color: #999
+				color: #fff
+				border: none
+				border-radius: 3px
+				.fas
+					font-family: fontawesomesolid
+	&-recent,&-populartags,&-instagram
+		.widget-name
+			position: relative
+			width: 100%
+			height: 40px
+			color: #000
+			background-color: #ebebeb
+			text-transform: uppercase
+			font-face: roboto
+			font-weight: 300
+			letter-spacing: 7px
+			font-size: 18px
+			text-align: center
+			line-height: 40px
+			.widget-traingle
+				top: 40px
+				position: absolute
+				width: 1px
+				height: 1px
+				left: 50%
+				margin-left: -10px
+				border: 10px solid #ebebeb
+				border-left: 10px solid transparent
+				border-right: 10px solid transparent
+				border-bottom: none
+	&-recent
+		margin-top: 30px
+		.recentposts
+			padding: 27px
+			background-color: #fff
+			.recentpost
+				display: flex
+				img
+					margin-right: 15px
+					margin-bottom: 20px
+				p
+					font-size: 16px
+					font-family: roboto
+					font-weight: 500
+					color: #000
+					line-height: 19px
+					margin-bottom: 0
+					span
+						margin-top: 10px
+						display: block
+						font-size: 13px
+						font-family: roboto
+						font-weight: 300
+						color: #a0a0a0
+				&:last-child
+					img
+						margin-bottom: 0
+	&-populartags
+		margin-top: 25px
+		.tags
+			padding: 35px 20px
+			background-color: #fff
+			button.tag
+				font-size: 13px
+				font-family: roboto
+				color: #9c9c9c
+				border: 1px solid #eee
+				border-radius: 3px
+				background-color: transparent
+				padding: 3px 12px
+				transition: all .5s ease
+				&:hover
+					background-color: #000
+					color: #fff
+	&-instagram
+		margin-top: 25px
+		.photos
+			padding: 35px 25px
+			background-color: #fff
+			column-count: 3
+			column-gap: 5px
+			img
+				width: 100%
+				margin-bottom: 5px
+
+
+
+
 @import "media" // Always at the end
