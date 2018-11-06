@@ -738,6 +738,7 @@ footer
 		margin-top: 25px
 		.tags
 			padding: 35px 20px
+			padding-bottom: 25px
 			background-color: #fff
 			button.tag
 				font-size: 13px
@@ -747,12 +748,14 @@ footer
 				border-radius: 3px
 				background-color: transparent
 				padding: 3px 12px
+				margin-bottom: 10px
 				transition: all .5s ease
 				&:hover
 					background-color: #000
 					color: #fff
 	&-instagram
 		margin-top: 25px
+		margin-bottom: 25px
 		.photos
 			padding: 35px 25px
 			background-color: #fff
@@ -762,7 +765,339 @@ footer
 				width: 100%
 				margin-bottom: 5px
 
+.blog-post
+	margin-top: 70px
+	margin-bottom: 30px
+	.post-tag
+		display: inline-block
+		margin-bottom: 30px
+		padding: 35px 45px
+		background-color: #fff
+		button.tag
+			font-size: 13px
+			font-family: roboto
+			color: #fff
+			border: 1px solid #eee
+			border-radius: 3px
+			background-color: #000
+			padding: 3px 12px
+		.name
+			.h2
+				font-family: roboto
+				font-weight: bold
+				font-size: 20px
+				color: #000
+				margin-bottom: 15px
+				margin-top: 18px
+			p
+				font-family: roboto
+				font-weight: bold
+				font-size: 13px
+				color: #ccc
+				margin-bottom: 22px
+				.fas
+					font-family: fontawesomesolid
+					margin-right: 7px
+		p
+			font-family: roboto
+			font-size: 14px
+			color: $gray
+			margin-bottom: 25px
+		.details
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.fas
+				font-family: fontawesomesolid
+				margin-right: 7px
+			.far
+				font-family: fontawesome
+				margin-right: 7px
+			p
+				color: #ccc
+				margin-bottom: 0
+			span
+				font-family: roboto
+				font-size: 13px
+				color: #9a9a9a
+	.post-default
+		display: inline-block
 
+		margin-bottom: 30px
+		img
+			width: 100%
+		
+		button.tag
+			font-size: 13px
+			font-family: roboto
+			color: #fff
+			border: 1px solid #eee
+			border-radius: 3px
+			background-color: #000
+			padding: 3px 12px
+		.wrapperpost
+			padding: 35px 45px
+			background-color: #fff
+			.name
+				.h2
+					font-family: roboto
+					font-weight: bold
+					font-size: 20px
+					color: #000
+					margin-bottom: 15px
+					margin-top: 18px
+				p
+					font-family: roboto
+					font-weight: bold
+					font-size: 13px
+					color: #ccc
+					margin-bottom: 22px
+					.fas
+						font-family: fontawesomesolid
+						margin-right: 7px
+			p
+				font-family: roboto
+				font-size: 14px
+				color: $gray
+				margin-bottom: 25px
+			.details
+				display: flex
+				justify-content: space-between
+				align-items: center
+				.fas
+					font-family: fontawesomesolid
+					margin-right: 7px
+				.far
+					font-family: fontawesome
+					margin-right: 7px
+				p
+					color: #ccc
+					margin-bottom: 0
+				span
+					font-family: roboto
+					font-size: 13px
+					color: #9a9a9a
+	.post-img
+		display: inline-block
+		position: relative
+		margin-bottom: 30px
+		&:hover
+			.post-img-hover
+				display: block
+		img
+			width: 100%
+		.post-img-hover
+			display: none
+			position: absolute
+			width: 100%
+			top: 0
+			left: 0
+			button.tag
+				font-size: 13px
+				font-family: roboto
+				color: #fff
+				border: 1px solid #eee
+				border-radius: 3px
+				background-color: #000
+				padding: 3px 12px
+			.wrapperpostblack
+				padding: 35px 45px
+				background-color: #000
+				opacity: 0.92
+				.name
+					.h2
+						font-family: roboto
+						font-weight: bold
+						font-size: 20px
+						color: #fff
+						margin-bottom: 15px
+						margin-top: 18px
+					p
+						font-family: roboto
+						font-weight: bold
+						font-size: 13px
+						color: #fff
+						margin-bottom: 22px
+						.fas
+							font-family: fontawesomesolid
+							margin-right: 7px
+				p
+					font-family: roboto
+					font-size: 14px
+					color: #fff
+					margin-bottom: 25px
+				.details
+					display: flex
+					justify-content: space-between
+					align-items: center
+					.fas
+						font-family: fontawesomesolid
+						margin-right: 7px
+					.far
+						font-family: fontawesome
+						margin-right: 7px
+					p
+						color: #fff
+						margin-bottom: 0
+					span
+						font-family: roboto
+						font-size: 13px
+						color: #fff
+	.post-video
+		display: inline-block
+		position: relative
+		margin-bottom: 30px
+		&:hover
+			.play
+				display: block
+		img
+			width: 100%
+		.play
+			display: none
+			position: absolute
+			width: 60px
+			height: 60px
+			background-color: #676667
+			border-radius: 50%
+			text-align: center
+			line-height: 60px
+			color: #e7e7e7
+			top: 50%
+			left: 50%
+			margin-left: -30px
+			margin-top: -30px
+			opacity: .8
+			cursor: pointer
+			.fas
+				font-family: fontawesomesolid
+				text-indent: 5px
+	.post-video, .post-img, .post-default, .post-tag
+		box-shadow: 0px 0px 12px #dbdbdb
+	.fa-heart
+		margin-left: 15px	
 
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+// SINGLE PAGE
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+.single
+	padding-top: 65px
+	background-color: #fafafa
+	.name
+		.h2
+			font-size: 30px
+			font-family: roboto
+			font-weight: 300
+			letter-spacing: 7px
+			color: #000
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 18px
+		.postdetails
+			width: 100%
+			justify-content: center
+			display: flex
+			p
+				padding: 0 30px
+				font-family: roboto
+				font-weight: bold
+				font-size: 14px
+				color: $gray
+				margin-bottom: 25px
+				.fas
+					font-family: fontawesomesolid
+					margin-right: 5px
+	img
+		width: 100%
+		margin-bottom: 45px
+	p
+		font-family: roboto
+		font-size: 14px
+		color: $gray
+		line-height: 2
+		margin-bottom: 23px
+		padding: 0 60px
+	.quote
+		border: 1px solid #e1e1e1
+		border-left: 4px solid #c8c8c8
+		p
+			font-family: pt_serif
+			font-size: 18px
+			color: $gray
+			line-height: 1.8
+			margin-bottom: 0
+			padding: 15px 40px 21px 40px
+	.h3
+		padding: 35px 60px 16px 60px
+		font-family: roboto
+		font-weight: bold
+		font-size: 16px
+		color: #000
+		text-transform: uppercase
+		margin-bottom: 0
+	.comment
+		.h2
+			font-family: roboto
+			font-weight: 300
+			font-size: 20px
+			letter-spacing: 5px
+			color: #000
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 18px
+			margin: 30px 0
+		form
+			.wrap
+				display: flex
+				justify-content: space-between
+			input[type="text"]
+				border: 1px solid #ededed
+				text-indent: 16px
+				height: 35px
+				width: 31%
+				margin-bottom: 20px
+				border-radius: 2px
+				background-color: transparent
+				&::-webkit-input-placeholder
+					color: #c4c4c4
+					font-family: roboto_italic
+					font-size: 14px
+				&:focus
+					border-left: 4px solid #dcdcdc
+			textarea
+				width: 100%
+				border: 1px solid #ededed
+				text-indent: 16px
+				height: 110px
+				border-radius: 2px
+				background-color: transparent
+				&::-webkit-input-placeholder
+					color: #c4c4c4
+					font-family: roboto_italic
+					font-size: 14px
+				&:focus
+					border-left: 4px solid #dcdcdc
+			.wrapbutton
+				display: flex
+				justify-content: center
+				button
+					width: 195px
+					height: 45px
+					margin-top: 25px
+					margin-bottom: 80px
+					background-color: #000
+					color: #fff
+					font-size: 14px
+					font-family: roboto
+					font-weight: bold
+					text-align: center
+					line-height: 45px
+					border: none
+					outline: none
+					text-transform: uppercase
+					border-radius: 3px
+					cursor: pointer
 
 @import "media" // Always at the end

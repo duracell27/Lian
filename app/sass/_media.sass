@@ -62,6 +62,9 @@
 				a
 					.fab
 						padding: 13px 6px
+	.blog-widget
+		&-search
+			margin-top: 0
 
 // Small devices (tablets, 768px and up)
 @media (max-width: $screen-sm-min) 
@@ -109,6 +112,59 @@
 				a
 					.fab
 						padding: 13px 6px
+	.blog-widget
+		&-search
+			margin-top: 0
+	.blog-post
+		.fa-heart
+			margin-left: 0
+
+	.blog-post
+		.post-tag
+			.details
+				.fas
+					margin-right: 2px
+					font-size: 11px
+					margin-left: 3px
+						
+				.far
+					margin-right: 2px
+					font-size: 11px
+					margin-right: 3px
+				span
+					font-size: 11px
+		
+		.post-default
+			.wrapperpost
+				.details
+					.fas
+						margin-right: 2px
+						font-size: 11px
+						margin-left: 3px
+						
+					.far
+						margin-right: 2px
+						font-size: 11px
+						margin-right: 3px
+					span
+						font-size: 11px
+						
+		.post-img
+			.post-img-hover
+				.wrapperpostblack
+					.details
+						.fas
+							margin-right: 2px
+							font-size: 11px
+							margin-left: 3px
+						
+						.far
+							margin-right: 2px
+							font-size: 11px
+							margin-right: 3px
+						span
+							font-size: 11px
+						
 
 @media (max-width: $screen-xs-min)
 	.owl-nav
@@ -181,8 +237,41 @@
 						padding: 13px 6px
 	.section-gallery
 		margin-top: 0
-		
 
+	.blog
+		&-post
+			column-count: 1
+
+	.blog-post
+		.post-img
+			width: 100%
+		.post-video
+			width: 100%
+
+	.single
+		.name
+			.h2
+				font-size: 24px
+				font-family: roboto
+				font-weight: 300
+				letter-spacing: 5px
+				color: #000
+				text-align: center
+				text-transform: uppercase
+				margin-bottom: 18px
+			.postdetails
+				width: 100%
+				justify-content: center
+				display: flex
+				p
+					padding: 0 9px
+					font-family: roboto
+					font-weight: bold
+					font-size: 11px
+					color: $gray
+					margin-bottom: 25px
+		p
+			padding: 0 30px
 
 
 

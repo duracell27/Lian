@@ -35,4 +35,14 @@ $(function() {
 		$('.post').show(500);
 	});
 
+	function height_img(){
+		var height = $(".post-img img").height();
+		console.log(height);
+		$(".wrapperpostblack").css("height", height)
+	};
+
+	$( document ).ready(function() {
+  		height_img();
+	});
+
 });
