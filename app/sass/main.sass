@@ -337,6 +337,7 @@ footer
 			font-family: roboto
 			font-weight: 300
 			font-size: 18px
+			letter-spacing: 4px
 
 .section_bg
 	background-position: -270px -15px
@@ -1053,7 +1054,7 @@ footer
 				display: flex
 				justify-content: space-between
 			input[type="text"]
-				border: 1px solid #ededed
+				border: 1px solid #e1e1e1
 				text-indent: 16px
 				height: 35px
 				width: 31%
@@ -1068,7 +1069,7 @@ footer
 					border-left: 4px solid #dcdcdc
 			textarea
 				width: 100%
-				border: 1px solid #ededed
+				border: 1px solid #e1e1e1
 				text-indent: 16px
 				height: 110px
 				border-radius: 2px
@@ -1099,5 +1100,151 @@ footer
 					text-transform: uppercase
 					border-radius: 3px
 					cursor: pointer
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+// CONTACT PAGE
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+.info
+	margin-top: 70px
+	.addres
+		p
+			font-family: roboto
+			font-size: 15px
+			color: $gray
+			margin-bottom: 23px
+			span
+				font-family: roboto
+				font-weight: bold
+				font-size: 15px
+				color: #222
+	.tell
+		p
+			font-family: roboto
+			font-weight: bold
+			font-size: 15px
+			color: #555
+			line-height: 21px
+			margin-bottom: 0
+			span
+				font-family: roboto
+				font-size: 15px
+				color: #222
+
+	.h2
+		font-family: roboto
+		font-weight: 300
+		font-size: 30px
+		color: #000
+		letter-spacing: 6px
+		text-transform: uppercase
+		margin-bottom: 0
+	.line
+		p
+			font-family: roboto
+			font-weight: 300
+			font-size: 16px
+			color: #2f302f
+			margin-bottom: 40px
+			&:after
+				content: ''
+				display: block
+				width: 50px
+				height: 1px
+				background-color: #000
+				margin-top: 12px
+form
+	.wrap_info
+		display: flex
+		justify-content: space-between
+	input[type="text"]
+		border: 1px solid #e1e1e1
+		text-indent: 16px
+		height: 35px
+		width: 47%
+		margin-bottom: 30px
+		border-radius: 2px
+		background-color: transparent
+		&::-webkit-input-placeholder
+			color: #c4c4c4
+			font-family: roboto_italic
+			font-size: 14px
+		&:focus
+			border-left: 4px solid #dcdcdc
+	textarea
+		width: 100%
+		border: 1px solid #e1e1e1
+		text-indent: 16px
+		height: 150px
+		border-radius: 2px
+		background-color: transparent
+		&::-webkit-input-placeholder
+			color: #c4c4c4
+			font-family: roboto_italic
+			font-size: 14px
+		&:focus
+			border-left: 4px solid #dcdcdc
+	.wrapbutton
+		display: flex
+		justify-content: flex-start
+		button
+			width: 195px
+			height: 45px
+			margin-top: 25px
+			margin-bottom: 80px
+			background-color: #000
+			color: #fff
+			font-size: 14px
+			font-family: roboto
+			font-weight: bold
+			text-align: center
+			line-height: 45px
+			border: none
+			outline: none
+			text-transform: uppercase
+			border-radius: 3px
+			cursor: pointer
+.map
+	max-height: 370px
+.value
+	padding-top: 62px
+	background-color: #fafafa
+	padding-bottom: 75px
+.values
+	text-align: center
+	.h2
+		font-size: 30px
+		font-family: roboto
+		font-weight: 300
+		color: #000
+		letter-spacing: 10px
+		text-transform: uppercase
+		margin-bottom: 0
+	p
+		font-size: 14px
+		color: $gray
+		font-family: roboto
+		margin: 30px 35%
+
+.tile-values
+	width: 100%
+	img
+		width: 100%
+.values_descr
+	.h3
+		margin: 25px 0	
+		font-family: roboto
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 18px
+		color: #000
+		letter-spacing: 5px
+	p
+		font-size: 14px
+		font-family: roboto
+		color: $gray
+		margin-bottom: 0
 
 @import "media" // Always at the end
